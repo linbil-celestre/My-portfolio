@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    
+
     <header class="navbar">
         <div class="nav-container">
             <a href="../index.html" class="logo-group">
@@ -49,62 +49,67 @@
 
             <!-- Hero Section -->
             <section class="contact-hero">
-                <div class="hero-tag">
-                    <span>📬 Get in Touch &bull; Hire Me</span>
-                </div>
+                <a class="hero-tag" href="./hire-me.html">
+                    <span aria-hidden="true">&#128140;</span>
+                    <span>Get in Touch</span>
+                    <span class="hero-tag-divider" aria-hidden="true">&bull;</span>
+                    <span>Hire Me</span>
+                    <span class="hero-tag-arrow" aria-hidden="true">&#8599;</span>
+                </a>
                 <h1 class="contact-title">Let's Build Something <span class="gradient-text">Exceptional</span> Together
                 </h1>
                 <p class="contact-subtitle">Have an exciting project, an internship opportunity, or looking for a
                     dedicated web developer? Reach out through direct channels or drop me a message below.</p>
             </section>
 
-
-            <!-- Centered QR Code Scanner Card -->
-            <section class="contact-qr-card">
-                <p class="qr-scan-instruction">Scan with your phone's camera to instantly start an email,
-                    save contact information, or open my developer profile—no typing needed.</p>
-
-                <!-- Category Tab Switcher -->
-                <div class="qr-tab-nav" role="tablist">
-                    <button type="button" class="qr-tab-btn active" id="tabEmail" onclick="switchQrCode('email')">
-                        <span>✉️ Email</span>
-                    </button>
-                    <button type="button" class="qr-tab-btn" id="tabGithub" onclick="switchQrCode('github')">
-                        <span>🐙 GitHub</span>
-                    </button>
-                    <button type="button" class="qr-tab-btn" id="tabLinkedin" onclick="switchQrCode('linkedin')">
-                        <span>💼 LinkedIn</span>
-                    </button>
-                    <button type="button" class="qr-tab-btn" id="tabVcard" onclick="switchQrCode('vcard')">
-                        <span>📱 Contact Card</span>
-                    </button>
+            <!-- Contact Scan Container -->
+            <section class="contact-scan-container" aria-labelledby="scan-title">
+                <div class="scan-heading">
+                    <span class="scan-kicker">GET IN TOUCH</span>
+                    <h2 id="scan-title">Have a project or opportunity in mind?</h2>
+                    <p>Let's connect and talk.</p>
                 </div>
 
-                <!-- QR Code Viewfinder Stage -->
-                <div class="qr-viewfinder-wrapper">
-                    <div class="qr-corner qr-corner-tl"></div>
-                    <div class="qr-corner qr-corner-tr"></div>
-                    <div class="qr-corner qr-corner-bl"></div>
-                    <div class="qr-corner qr-corner-br"></div>
+                <div class="scan-options">
+                    <a class="scan-option scan-email-option" href="mailto:linbilcelestre@gmail.com">
+                        <span class="scan-option-icon" aria-hidden="true">&#9993;</span>
+                        <span class="scan-option-title">EMAIL ME</span>
+                        <span class="scan-option-value">LINBILCELESTRE3@email.com</span>
+                        <span class="scan-option-action">[ Send Email ]</span>
+                    </a>
 
-                    <!-- Dynamic QR Code Image -->
-                    <img class="qr-code-img" id="qrCodeImg" src="../image/Message.png" alt="Lin Bil Celestre QR Code" />
+                    <div class="scan-option scan-qr-option">
+                        <span class="scan-option-icon" aria-hidden="true">&#9632;</span>
+                        <span class="scan-option-title">QR CODE</span>
+                        <img class="scan-qr-image" src="../Contact/EMAIL.png" alt="QR code to email Lin Bil Celestre">
+                        <span class="scan-option-action">Scan to Email Me</span>
+                    </div>
                 </div>
 
-                <!-- Target Link Pill Button -->
-                <a class="qr-pill-link" id="qrPillLink" href="mailto:linbilcelestre@gmail.com">
-                    <span class="pill-icon" id="qrPillIcon">✉</span>
-                    <span class="pill-text" id="qrPillText">Email : linbilcelestre3@gmail.com</span>
-                </a>
+                <div class="document-actions" aria-label="Professional documents">
+                    <a class="document-button" href="../LIN%20BIL%20CELESTRE%20RESUME.pdf" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="document-button-icon" aria-hidden="true">&#128196;</span>
+                        <span class="document-button-copy">
+                            <strong>View Resume</strong>
+                            <small>Professional profile</small>
+                        </span>
+                        <span class="document-button-arrow" aria-hidden="true">&#8599;</span>
+                    </a>
+                    <a class="document-button" href="../linbil-celestre-cover-letter.pdf" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="document-button-icon" aria-hidden="true">&#9998;</span>
+                        <span class="document-button-copy">
+                            <strong>View Cover Letter</strong>
+                            <small>Application introduction</small>
+                        </span>
+                        <span class="document-button-arrow" aria-hidden="true">&#8599;</span>
+                    </a>
+                </div>
             </section>
+
         </div>
     </main>
-
-    <!-- Copy Toast Popup -->
-    <div class="toast-toast-box" id="toastBox">
-        <span>📋</span>
-        <span id="toastMessage">Copied to clipboard!</span>
-    </div>
 
     <!-- Modern Site Footer -->
     <footer class="site-footer">
@@ -113,124 +118,15 @@
                 <span class="copyright">&copy; 2026 Lin Bil Celestre. All rights reserved.</span>
                 <div class="footer-links">
                     <a href="https://github.com/linbil-celestre" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://www.linkedin.com/in/linbil-celestre-6bb6b2396/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://www.facebook.com/celestre.linbil" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.linkedin.com/in/linbil-celestre-6bb6b2396/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.facebook.com/celestre.linbil" target="_blank"
+                        rel="noopener noreferrer">Facebook</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Interactive Script -->
-    <script>
-        // Copy to clipboard helper
-        function copyToClipboard(text, message) {
-            navigator.clipboard.writeText(text).then(() => {
-                showToast(message || 'Copied to clipboard!');
-            }).catch(() => {
-                showToast('Unable to copy automatically.');
-            });
-        }
-
-        // Show Toast Notification
-        function showToast(message) {
-            const toast = document.getElementById('toastBox');
-            const toastMsg = document.getElementById('toastMessage');
-            if (!toast || !toastMsg) return;
-
-            toastMsg.textContent = message;
-            toast.classList.add('show');
-            clearTimeout(window.toastTimeout);
-            window.toastTimeout = setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3000);
-        }
-
-        // QR Code Data Configurations
-        const qrConfigs = {
-            email: {
-                src: '../image/Message.png',
-                data: 'mailto:linbilcelestre@gmail.com?subject=Portfolio%20Inquiry',
-                displayLabel: '✉️ mailto:linbilcelestre@gmail.com',
-                actionUrl: 'mailto:linbilcelestre@gmail.com?subject=Portfolio%20Inquiry',
-                actionText: 'Open in Mail App',
-                copyValue: 'linbilcelestre@gmail.com',
-                copyMsg: 'Email address copied!'
-            },
-            github: {
-                data: 'https://github.com/linbil-celestre',
-                displayLabel: '🐙 https://github.com/Linbil21',
-                actionUrl: 'https://github.com/linbil-celestre',
-                actionText: 'Open GitHub Profile',
-                copyValue: 'https://github.com/linbil-celestre',
-                copyMsg: 'GitHub link copied!'
-            },
-            linkedin: {
-                data: 'https://linkedin.com',
-                displayLabel: '💼 https://linkedin.com',
-                actionUrl: 'https://linkedin.com',
-                actionText: 'Open LinkedIn Profile',
-                copyValue: 'https://linkedin.com',
-                copyMsg: 'LinkedIn link copied!'
-            },
-            vcard: {
-                data: 'BEGIN:VCARD\nVERSION:3.0\nN:Celestre;Lin Bil;;;\nFN:Lin Bil Celestre\nTITLE:Web Developer & IT Specialist\nEMAIL:linbilcelestre@gmail.com\nURL:https://github.com/Linbil21\nEND:VCARD',
-                displayLabel: '📱 Lin Bil Celestre Contact vCard',
-                actionUrl: 'mailto:linbilcelestre@gmail.com',
-                actionText: 'Contact Lin Bil',
-                copyValue: 'Lin Bil Celestre - Web Developer - linbilcelestre@gmail.com',
-                copyMsg: 'Contact card details copied!'
-            }
-        };
-
-        let currentQrKey = 'email';
-
-        // Switch QR code tab
-        function switchQrCode(key) {
-            const config = qrConfigs[key];
-            if (!config) return;
-
-            currentQrKey = key;
-
-            // Update tab button active states
-            document.querySelectorAll('.qr-tab-btn').forEach(btn => btn.classList.remove('active'));
-            const activeBtn = document.getElementById('tab' + key.charAt(0).toUpperCase() + key.slice(1));
-            if (activeBtn) activeBtn.classList.add('active');
-
-            // Update QR Code Image
-            const qrImg = document.getElementById('qrCodeImg');
-            if (qrImg) {
-                qrImg.style.opacity = '0.4';
-                qrImg.src = config.src || `https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(config.data)}`;
-                qrImg.onload = () => {
-                    qrImg.style.opacity = '1';
-                };
-            }
-
-            // Update Pill Link
-            const pillLink = document.getElementById('qrPillLink');
-            const pillIcon = document.getElementById('qrPillIcon');
-            const pillText = document.getElementById('qrPillText');
-            if (pillLink && pillText) {
-                pillLink.href = config.actionUrl;
-                pillText.textContent = config.displayLabel || config.actionUrl;
-                if (pillIcon && config.icon) pillIcon.textContent = config.icon;
-                if (config.actionUrl.startsWith('http')) {
-                    pillLink.target = '_blank';
-                    pillLink.rel = 'noopener noreferrer';
-                } else {
-                    pillLink.removeAttribute('target');
-                    pillLink.removeAttribute('rel');
-                }
-            }
-        }
-
-        // Copy current QR info
-        function copyCurrentQrData() {
-            const config = qrConfigs[currentQrKey];
-            if (!config) return;
-            copyToClipboard(config.copyValue, config.copyMsg);
-        }
-    </script>
 </body>
 
 </html>
